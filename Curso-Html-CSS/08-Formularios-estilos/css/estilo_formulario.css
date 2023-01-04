@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+:root {
+  --main-bg-color: #161717;
+  --main-text-color: white;
+  --main-input-bg-color: #212121;
+  --main-input-hover-bg-color: #454045;
+}
+
+html{
+	font-family: 'Ubuntu Mono', monospace;
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+}
+
+.container{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 25px;
+	width: 100%;
+}
+
+.buttons{
+	display: flex;
+	align-self: center;
+	gap: 20px;
+}
+
+
+.btn-google{
+	background-color: skyblue;
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 2px;
+}
+
+.btn-google span {
+	color: white;
+	padding: 15px;
+	font-weight: 500;
+}
+
+.btn-google picture {
+	background-color: white;
+	width: 35px;
+	height: 35px;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.btn-google picture img{
+	width: 75%;
+}
+
+.btn-google:hover{
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.btn-twitter{
+	color: #ccc;
+	background-color: #eee;
+	border: none;
+	width: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-twitter:hover{
+	background-color: #ddd;
+}
+
+.separador{
+	display: flex;
+	width: 100%;
+	gap: 15px;
+}
+
+.separador hr {
+	flex-grow: 1;
+	border: none;
+	border-top: 1px solid #ccc;
+}
+
+.separador span {
+	color: #h8h8h8;
+}
+
+.section-inputs{
+	display: flex;
+	gap: 10px;
+	width: 100%;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 20px;
+}
+
+
+label {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.section-inputs label input {
+	width: 80%;
+	background-color: var(--main-input-bg-color);
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	outline: none;
+	font-size: 14pt;
+}
+
+label input {
+	width: 90%;
+	background-color: var(--main-input-bg-color);
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	outline: none;
+	font-size: 14pt;
+	transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+label span {
+	font-weight: 700;
+}
+
+label input:hover{
+	background-color: var(--main-input-hover-bg-color);
+	border: solid 1px #f3f3f4;
+	box-shadow: 0 0 4px #eb50ff4f;
+}
+
+label input:focus{
+	background-color: white;
+	border: solid 1px #f3f3f4;
+	box-shadow: 0 0 4px #eb50ff4f;
+}
+
+.checkbox-input{
+	display: flex;
+	flex-direction: row;
+}
+
+.checkbox-input input{
+	width: 20px;
+}
+
+.checkbox-input span{
+	font-weight: 400;
+}
+
+.submit-btn{
+	background-color: #ea4c89;
+	color: white;
+	font-weight: 500;
+	font-size: 14pt;
+	text-align: center;
+	padding: 15px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.submit-btn:hover{
+	opacity: 0.75;
+}
