@@ -1,0 +1,36 @@
+.padre{
+	background-color: blue;
+	width: 400px;
+	height: 400px;
+}
+
+.hijo {
+	background-color: yellow;
+	width: 50%;
+	height: 50%;
+    /*transition: all 1s ease;*/
+    animation: colores 1s ease infinite forwards alternate;
+}
+
+.padre:hover .hijo{
+	/*transform: translate(50px, 20px);*/
+	animation-play-state: paused;
+}
+
+@keyframes colores{
+	0%{
+		transform: translate(0%,0%);
+	}
+	25%{
+		transform: translate(100%,0%);
+	}
+	50%{
+		transform: translate(100%,100%);
+	}
+	75%{
+		transform: translate(0%,100%);
+	}
+	100%{
+		transform: translateX(0%, 0%);
+	}
+}
