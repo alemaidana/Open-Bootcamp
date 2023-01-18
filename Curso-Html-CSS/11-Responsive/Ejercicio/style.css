@@ -1,0 +1,43 @@
+:root {
+  --color1: red;
+  --color2: green;
+  --color3: blue;
+
+  --main-color: pink;
+  
+}
+
+
+.container{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    font-size: 2rem;
+}
+
+.seccion-1{
+    background-color: var(--color1);
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.seccion-2{
+  background-color: var(--main-color);
+  padding: 20px;
+  flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+    
+    .container {
+        flex-direction: column-reverse;
+    }
+    
+    .seccion-1 {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
